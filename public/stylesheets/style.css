@@ -20,6 +20,8 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   max-width: 100%;
+  touch-action: manipulation;
+  -webkit-overflow-scrolling: touch;
   height: auto;
   font-family: "Montserrat", sans-serif; 
 }
