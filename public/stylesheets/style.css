@@ -641,9 +641,9 @@ h4 {
 }
 
 @media screen and (max-width: 340px) {
-  body{
+  /* body{
     background-position-x: -610px;
-  }
+  } */
   .burger-button {
     top: 18px;
     left: 88vw;
