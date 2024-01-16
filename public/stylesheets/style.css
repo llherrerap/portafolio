@@ -20,8 +20,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   max-width: 100%;
-  touch-action: manipulation;
-  -webkit-overflow-scrolling: touch;
   height: auto;
   font-family: "Montserrat", sans-serif; 
 }
@@ -571,6 +569,9 @@ h4 {
   }
 }
 @media screen and (max-width: 480px) {
+  body{
+    background-size: contain;
+  }
   section{
     z-index: 5px;
   }
@@ -645,9 +646,7 @@ h4 {
 }
 
 @media screen and (max-width: 340px) {
-  /* body{
-    background-position-x: -610px;
-  } */
+  
   .burger-button {
     top: 18px;
     left: 88vw;
