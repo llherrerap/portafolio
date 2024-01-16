@@ -571,6 +571,7 @@ h4 {
 @media screen and (max-width: 480px) {
   body{
     background-size: contain;
+    background-attachment: fixed;
   }
   section{
     z-index: 5px;
