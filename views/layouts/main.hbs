@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hoja de vida de Liliana Herrera, Ingeniera de Sistemas con enfasis en desarrollo backend">
+  <meta name="keywords"
+    content="ingeniera de sistemas, desarrollo backend, bases de datos, portafolio, universidad distrital, ud, Liliana Herrera">
+  <meta name="author" content="Liliana">
+  <title>{{title}}</title>
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <link href="/styles/bootstrap.min.css" rel="stylesheet">
+  <link href="/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  {{> navbar}}
+  <div class="container mt-2">
+    {{{body}}}
+  </div>
+  {{> footer}}
+  <script src="/scripts/bootstrap.bundle.min.js"></script>
+  <script src="/aos/aos.js"></script>
+  <script src="/javascripts/menu.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

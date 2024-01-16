@@ -1,0 +1,695 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon-menu:before {
+  content: "\e5d2";
+}
+
+body {
+  font-weight: 300;
+  color: #2f303a;
+  background-image: url("../images/fondo.png");
+  background-size: cover; /*Cubre toda la pantalla*/
+  background-attachment: fixed; /*Hace que la imagen de fondo se mueva*/
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif; /*Tipo de letra, si no encuentra la primera tipografia en el ordenador pone la segunda tipografica*/
+}
+h2 {
+  margin-left: 80px;
+  margin-block: 2em;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #2f303a;
+  letter-spacing: 2px;
+}
+.portafolio {
+  justify-content: center;
+}
+.project {
+  border: 2px gray solid;
+  width: 1020px;
+  border-radius: 10px;
+  margin: 10px; /*Espacio que hay desde el contenedor hasta lo que tenga al lado*/
+  margin-bottom: 15px;
+  display: flex;
+  padding: 20px; /*Espacio que hay entre el contentenido y el borde*/
+  box-sizing: border-box; /*El ancho del contenido no va a ser más grande que el tamaño definido*/
+}
+
+.project-details {
+  width: 500px;
+}
+
+.hero {
+  display: flex;
+  margin-top: 100px;
+  height: auto;
+  padding-block: 20px;
+  background-size: 440px 270px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  align-items: center;
+  background-color: rgb(247, 226, 218, 0.5);
+  border: 1px rgb(247, 226, 218, 0.5) solid;
+  border-radius: 10px;
+}
+
+.hero p {
+  color: #2f303a;
+  margin-left: 80px;
+  line-height: 50px; /*Espacio entre fraces*/
+  font-weight: 500; /*Estilos y pesos de fuentes (negrilla)*/
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 22px;
+}
+
+.hero p a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: #fce1d6;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding-inline: 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 600;
+  animation: continuous-animation 2s infinite; 
+  transition: font-size 0.3s ease-in-out;
+}
+
+.hero p a:hover{
+  font-size: 18px;
+  transition: font-size 0.3s ease-in-out;
+}
+
+section{
+  position: relative;
+}
+
+.hero img{
+  width: 450px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  height: inherit; /*Ereda el valor del alto del header*/
+  list-style: none; /*Quitar el estilo a las listas*/
+}
+
+figure {
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  color: #2f303a;
+  display: flex;
+  height: 70px;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header-scroll{
+  background-color: #F7E2DA;
+  -webkit-box-shadow: 5px 0px 20px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 5px 0px 20px -5px rgba(0,0,0,0.75);
+  box-shadow: 5px 0px 20px -5px rgba(0,0,0,0.75);
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.header figure {
+  height: inherit;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header h1 {
+  font-weight: 500;
+  letter-spacing: 5px; /*espacio entre letras*/
+  text-transform: uppercase; /*Poner todo el texto en mayusculas*/
+  font-size: 23px;
+  margin: 10px;
+}
+
+.header div {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.header ul {
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header ul li {
+  height: inherit;
+}
+
+.menu img {
+  width: 50px;
+}
+
+.header a {
+  align-items: center;
+  display: flex; /*Hacer el elemento flex para poder alinearlos más facil*/
+  height: inherit; /*Hereda las propiedades del padre con inherit*/
+  color: #2f303a;
+  text-decoration: none; /*Quita la decoracion a los links*/
+  font-weight: 500;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+.formation-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.formation {
+  margin: 10px 25px;
+  width: 40%;
+  background-color: rgb(247, 226, 218, 0.5);
+  border-radius: 10px;
+  flex-shrink: 0; /*Hace que la seccion ocupe oblicatorialmente el espacio asignado*/
+  overflow: hidden; /*Oculta lo que se desborde del borde*/
+}
+
+.formation img {
+  width: 500px;
+  height: 150px;
+  object-fit: cover; /*Para que la imagen no se deforme*/
+}
+
+.formation-detail {
+  margin: 20px 40px;
+  margin-top: -50px;
+  position: relative; /*Pone la posicion que sea*/
+  padding: 20px; /*separa el texto del borde*/
+  background-color: white;
+  text-align: center;
+  color: #2f303a;
+}
+
+.formation-description{
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.formation-title {
+  color: #2f303a;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+.knowledge .herramientas {
+  justify-self: center;
+  margin: 50px 0px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /*Hacer que los elementos caigan y no esten siempre en fila*/
+  /*flex-direction:row;Direccion del flex*/
+}
+
+.knowledge img {
+  width: 100px;
+  margin: 20px;
+  /*flex-shrink:0;Capacidad de encogimiento, 0 nada de encogimiento, 1 mucho encogimiento*/
+}
+
+.knowledge h3{
+  text-align: center;
+  font-size: 24px;
+}
+
+.knowledge .herramienta{
+  margin: 0 20px;
+  text-align: center;
+}
+
+.knowledge .herramienta .descripcion{
+  text-align: center;
+}
+h4 {
+  color: #2f303a;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.contact {
+  margin-top: 20px;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.contact div {
+  align-items: center;
+  display: flex;
+}
+
+.contact figure {
+  margin: 0;
+}
+
+.contact .ubicacion img {
+  margin-left: 20px;
+  width: 30px;
+}
+
+.contact .redes img {
+  width: 40px;
+  display: flex;
+  margin: 0 8px;
+}
+
+/*Menu*/
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: none !important;
+  background-color: rgb(247, 226, 218, 0.5);
+  line-height: 40px !important;
+  text-align: center;
+  position: fixed;
+  z-index: 20;
+  left: 18px;
+  top: 18px;
+  color: #2f303a;
+  font-size: 1.3em !important;
+}
+
+.skills{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills ul{
+  list-style: disc;
+  font-size: 18px;
+}
+
+.skills li {
+  margin-bottom: 15px;
+}
+
+.skills li strong {
+  font-weight: 500;
+}
+
+.experienciaLaboral{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.experiencia{
+  background-color: rgb(247, 226, 218, 0.5);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.experiencia h2{
+  margin-left: 0px;
+  text-transform: none;
+  font-weight: 600;
+  margin-block: 0;
+  font-size: 1.5em;
+  letter-spacing: 0px;
+}
+
+.experiencia ul{
+  list-style: inside;
+}
+
+.experiencia p{
+  font-weight: 500;
+}
+
+.experiencia h3{
+  color: #787878;
+  FONT-WEIGHT: 700;
+  font-size: 1em;
+}
+
+.projects{
+  margin-top: 100px;
+}
+
+.projects h2{
+  margin-left: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.projects .card-footer{
+  text-align: center;
+}
+
+.projects .card-footer a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  transition: font-size 0.3s ease-in-out;
+}
+
+.projects .card-footer a:hover{
+  font-size: 1.05em;
+  transition: font-size 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1366px) {
+  .knowledge {
+    margin: 50px;
+  }
+}
+
+@media screen and (max-width: 1357px) {
+  .header .menu a{
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1215px) {
+  .knowledge {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .formation {
+    width: 60%;
+  }
+  .formation img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /*Para que la imagen no se deforme*/
+  }
+  h2 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 0;
+    /* margin: 20px 20px; */
+  }
+  .experiencia h2 {
+    text-align: left;
+  }
+  .hero {
+    display: flex;
+    /* margin-top: 20px; */
+    padding-block: 1rem;
+    text-align: center;
+    justify-content: center;
+    background-image: none;
+  }
+  .hero p{
+    margin-left: 0;
+  }
+  .hero img{
+    display: none;
+  }
+  .header .logoContainer{
+    position: relative;
+    top: 0.5em;
+  }
+  .header h1{
+    margin: -10px 10px 0;
+  }
+  .hero p a {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .burger-button {
+    display: block !important;
+    left: 94vw;
+  }
+  .header {
+    display: block;
+    /* height: auto; */
+  }
+  .header ul {
+    display: initial;
+  }
+  .header ul li {
+    height: 50px;
+    margin-bottom: 3em;
+  }
+  .header .menu a {
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 0.5em;
+  }
+  .header div {
+    justify-content: center;
+  }
+  .header figure {
+    margin-top: 5px;
+  }
+  .menu {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.8);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  .menu.is-active {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .formation-detail {
+    font-size: 0.8em;
+    padding: 1em;
+  }
+
+  .formation-title {
+    font-size: 1em;
+  }
+  .formation img {
+    width: 100%;
+    height: 100px;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  .knowledge img {
+    margin: 10px;
+    width: 50px;
+  }
+  .hero {
+    display: flex;
+    /* margin-top: 20px; */
+    height: auto;
+    justify-content: center;
+    background-image: none;
+    text-align: center;
+  }
+  .hero p {
+    color: #2f303a;
+    font-size: 1em;
+    padding-inline: 1em;
+    /* margin-left: 2em; */
+    line-height: 2em; /*Espacio entre fraces*/
+    font-weight: 500; /*Estilos y pesos de fuentes (negrilla)*/
+  }
+  .header a {
+    font-size: 0.8em;
+    margin: 0em;
+  }
+  .burger-button {
+    display: block;
+    left: 90vw;
+  }
+  .skills li {    
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .experiencia h2{
+    font-size: 1em;
+  }
+  .experiencia p{
+    font-size: 0.9em;
+  }
+  .experiencia h3{
+    color: #787878;
+    FONT-WEIGHT: 700;
+    font-size: 0.95em;
+  }
+  .experiencia li{
+    /* text-align: justify; */
+    font-size: 0.9rem;
+  }
+  .knowledge h3 {
+    text-align: center;
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 480px) {
+  section{
+    z-index: 5px;
+  }
+  .burger-button {
+    left: 85vw;
+  }
+  .formation {
+    width: 80%;
+    flex-shrink: initial;
+  }
+  .formation-detail {
+    margin: -2em 1em 1em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .hero p {
+    color: #2f303a;
+    font-size: 0.9em;
+    /* margin-left: 2em; */
+    line-height: 2em; /*Espacio entre fraces*/
+    font-weight: 500; /*Estilos y pesos de fuentes (negrilla)*/
+  }
+  .hero {
+    display: flex;
+    /* margin-top: 20px; */
+    justify-content: center;
+    background-image: none;
+    text-align: center;
+  }
+  .header div {
+    justify-content: left;
+  }
+  .header h1 {
+    font-size: 1em;
+  }
+  .contact h4 {
+    font-size: 0.8em;
+  }
+  .contact .redes img {
+    width: 30px;
+    display: flex;
+    margin: 0 8px;
+  }
+  h2 {
+    /* margin: 10px 10px; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .projects h2{
+    font-size: 20px;
+  }
+  .burger-button {
+    width: 30px;
+    height: 30px;
+   line-height: 30px !important;
+    font-size: 1.3em !important;
+    top: 22px;
+    left: 90vw;
+  }
+  .skills, .formation, .experienciaLaboral{
+    width: 100%;
+  }
+  .experiencia{
+    margin: 20px 10px;
+  }
+  .knowledge .herramientas {
+    margin: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body{
+    background-position-x: -610px;
+  }
+  .burger-button {
+    top: 18px;
+    left: 88vw;
+  }
+  .hero h1 {
+    text-align: center;
+    font-size: 0.668em;
+    margin-left: 2em;
+    line-height: 2em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+
+  .experiencia li{
+    font-size: 0.8em;
+    /* margin-inline: 20px; */
+  }
+
+  .skills li{
+    font-size: 0.8em;
+    margin-inline: 20px;
+  }
+  .contact h4 {
+    font-size: 0.6em;
+  }
+  .header .logo{
+    margin-top: 20px;
+  }
+  .header img{
+    width: 2em;
+  }
+  .header h1{
+    font-size: 1em;
+    margin-top: -20px;
+  }
+}
+
+@keyframes continuous-animation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Cambia la cantidad y dirección según tus preferencias */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

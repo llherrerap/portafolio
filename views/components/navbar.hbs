@@ -1,0 +1,63 @@
+{{!-- <i class="icon-menu burger-button" id="burger-menu"></i> --}}
+
+<span class="material-symbols-outlined burger-button" id="burger-menu">Menu</span>
+<header id="navbar" class="header">
+    <div class="logoContainer">
+        <a href="/">
+            <figure class="logo">
+                <img src="/images/logo.png" alt="Logo de Liliana Herrera" width="50">
+            </figure>
+            <h1><strong>Liliana</strong> Herrera</h1>
+        </a>
+        
+    </div>
+    <nav class="menu">
+        <ul>
+            {{#if mode}}
+            <li>
+                <a class="link" href="/es/projects">Proyectos</a>
+            </li>
+            <li>
+                <a class="link" href="/#habilidades">Habilidades</a>
+            </li>
+            <li>
+                <a class="link" href="/#formacion">Formación</a>
+            </li>
+            <li>
+                <a href="/#experienciaLaboral" class="link">Experiencia</a>
+            </li>
+            <li>
+                <a class="link" href="/#conocimientos">Conocimientos</a>
+            </li>
+            <li>
+                <a class="link" href="/#contacto">Contacto</a>
+            </li>
+            <li>
+                <a class="link" href="/en"><img src="/images/ingles.png" alt="Traducir al ingles"></a>
+            </li>
+            {{else}}
+            <li>
+                <a class="link" href="/en/projects">Projects</a>
+            </li>
+            <li>
+                <a class="link" href="/#skills">Skills</a>
+            </li>
+            <li>
+                <a class="link" href="/#education">Education</a>
+            </li>
+            <li>
+                <a href="/#workExperience" class="link">Experience</a>
+            </li>
+            <li>
+                <a class="link" href="/#knowledge">Knowledge</a>
+            </li>
+            <li>
+                <a class="link" href=/"#contacto">CONTACT</a>
+            </li>
+            <li>
+                <a class="link" href="/"><img src="/images/español.png" alt="Traducir al español"></a>
+            </li>
+            {{/if}}
+        </ul>
+    </nav>
+</header>
