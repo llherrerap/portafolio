@@ -16,10 +16,12 @@ body {
   font-weight: 300;
   color: #2f303a;
   background-image: url("../images/fondo.png");
-  background-size: cover; /*Cubre toda la pantalla*/
-  background-attachment: fixed; /*Hace que la imagen de fondo se mueva*/
+  background-size: cover; 
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: "Montserrat", sans-serif; /*Tipo de letra, si no encuentra la primera tipografia en el ordenador pone la segunda tipografica*/
+  max-width: 100%;
+  height: auto;
+  font-family: "Montserrat", sans-serif; 
 }
 h2 {
   margin-left: 80px;
